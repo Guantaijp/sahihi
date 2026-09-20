@@ -1,149 +1,167 @@
-# Sahihi — Public Participation Notice Finder
+# Sahihi
 
-Surfaces active public participation notices for a Kenyan county, in plain
-language, grounded strictly in curated, sourced data — never invented.
+**Public participation notices you can trust — on WhatsApp, in plain language, and never invented.**
 
-## What's in this scaffold
+Kenya's constitution guarantees the public a say in county and national decisions.
+Acting on that right means knowing what is open for comment, by when, and where to
+show up. Today that information is published as photographs of printed letters,
+scattered across 47 county assemblies, two houses of Parliament and the Gazette, and
+goes stale without warning. Nairobi County's own August 2026 assessment found that
+**0.74% of its residents take part in public engagement forums**.
 
-Built with [NestJS](https://nestjs.com) (TypeScript). Each piece below is a
-Nest module under `src/`, wired together in `src/app.module.ts`.
+Sahihi answers one question — *"what can I have a say in right now?"* — over
+WhatsApp, and backs every answer with the official source and the date it was last
+checked.
 
-- **Channel-agnostic conversation engine** (`src/conversation/conversation.service.ts`) — the same
-  logic drives both the WhatsApp webhook and the local test web-chat.
-- **Test web-chat UI** (`public/index.html`) — so you can demo and iterate
-  before WhatsApp Business API access is approved. Open it at
-  `http://localhost:3000/index.html` once the server is running.
-- **WhatsApp webhook stub** (`src/whatsapp/`) — verification handshake +
-  inbound message handling + outbound send via the Meta Graph API. Falls
-  back to a console-log stub if `WHATSAPP_TOKEN` isn't set yet, so the rest
-  of the app stays testable.
-- **Notice knowledge base** (`data/notices.json`) — structured, curated
-  entries. **Currently filled with clearly-labelled placeholder data —
-  replace before any demo.** See "Data — read this before demoing" below.
-- **County matcher** (`src/notices/county-matcher.ts`) — normalizes free-text county
-  input against all 47 counties.
-- **Response composer** (`src/conversation/response-composer.service.ts`) — the trust boundary.
-  Template-based by default (no network dependency); any field marked
-  `"not_confirmed"` is shown to the user as unconfirmed, never smoothed
-  over or guessed. An optional LLM rephrasing pass (Mistral by default,
-  or Claude with `LLM_PROVIDER=anthropic`)
-  (`USE_LLM_COMPOSER=true`) only polishes tone/language — it's explicitly
-  instructed not to add or change any fact.
-- **Expiry** — a notice whose deadline has passed is never listed
-  (`NoticeStoreService`), so the bot can't announce a closed hearing as open.
-  Notices with an unconfirmed deadline are always shown, flagged as such.
-- **Reminder scheduler** (`src/reminders/reminders.service.ts`) — daily
-  `@Cron` job via `@nestjs/schedule`;
-  sends one reminder in the last 3 days before a notice's deadline, for users
-  who opted in with "remind &lt;number&gt;". Never schedules against an
-  unconfirmed deadline.
-- **Sessions** (`src/session/session.service.ts`) — saved to
-  `data/sessions.json` (`SESSION_STORE_PATH`) so conversations and reminders
-  survive a restart.
+**Capstone track:** Transparency & Accountability.
+**Written summary for judges:** [SUBMISSION.md](SUBMISSION.md) · **Pitch deck:** [sahihi-pitch-deck.pdf](sahihi-pitch-deck.pdf)
 
-## Setup
+---
+
+## The one thing that makes this different
+
+**It would rather say nothing than guess.**
+
+A plausible wrong deadline is worse than silence: someone travels to a hearing that
+closed last week. So Sahihi can only repeat facts that exist in a curated record
+traced to an official document. Where a detail is missing, it says so:
+
+```
+2. The Public Participation Bill, 2025 — Senate is taking public comments
+   Deadline: not yet confirmed — please check the official source below
+   Source: Senate of Kenya — Bills page — https://www.parliament.go.ke/...
+   Last verified: 2026-09-19
+```
+
+That is not an error state. That is the product working: two news outlets reported a
+28 September deadline for that bill, but no official page confirms it, so Sahihi
+refuses to state it.
+
+How that rule is enforced:
+
+| Rule | Where |
+| --- | --- |
+| Only one module renders user-facing text, and only from the notice record | `src/conversation/response-composer.service.ts` |
+| `not_confirmed` fields render as "not yet confirmed — check the official source" | same module |
+| Every notice carries issuing body, source link and `last_verified` date | `data/notices.json` |
+| A notice whose deadline has passed vanishes from every reply, automatically | `src/notices/notice-store.service.ts` |
+| Reminders are refused when a deadline is unconfirmed, and never fire against one | `src/reminders/reminders.service.ts` |
+| The optional AI layer may only rephrase verified text, never add a fact; off by default | `polishWithLLM`, same module |
+| 59 automated tests, including tests over the real data file | `pnpm test` |
+
+## What a user can do
+
+| They type | They get |
+| --- | --- |
+| `Kisumu` | Open notices for that county, plus national ones that apply everywhere |
+| `all` | Everything on file, across all counties, 5 at a time |
+| `more` | The next page |
+| `what is open about health?` | Keyword search across every notice |
+| `1` | Venue, time, how to submit, deadline, official source |
+| `remind 1` | One reminder before the deadline, with how to opt out |
+| `stop` | Reminders cancelled and their stored record deleted |
+| `habari` / `kiswahili` | The whole conversation switches to Kiswahili |
+
+Numbers and single words only — no menus, no app, no account. Plain text works on a
+basic handset and a weak signal. Long lists are paged to stay under WhatsApp's
+4,096-character limit.
+
+## Try it in two minutes
 
 ```bash
 pnpm install
-cp .env.example .env
-```
-
-Leave `USE_LLM_COMPOSER=false` and the WhatsApp vars blank to run the whole
-thing with zero external dependencies.
-
-## Run
-
-```bash
+cp .env.example .env     # no keys needed; everything below runs offline
 pnpm dev
 ```
 
-This runs `nest start --watch`. For a production build: `pnpm build` then
-`pnpm start` (runs `dist/main.js`).
-
-Then open **http://localhost:3000/index.html** to chat with the bot in a
-browser (mimics the WhatsApp conversation flow).
-
-## Tests
+Open **http://localhost:3000/index.html** — a browser chat page that runs the exact
+same engine as the WhatsApp webhook, so you can see the whole product without a Meta
+account. Try `nairobi`, then `1`, then `remind 1`, then `stop`.
 
 ```bash
-pnpm test
+pnpm test        # 59 tests, including the data-file checks
+pnpm build && pnpm start
 ```
 
-Runs the whole app against fixture data (never your `.env`, never the real
-LLM or WhatsApp APIs), plus a check of `data/notices.json` itself — run it
-after every edit to the notices file.
+## The data
 
-## Data — read this before demoing
+`data/notices.json` holds **real, currently-open notices**, each entered by hand from
+a primary source:
 
-`data/notices.json` ships with **placeholder entries only**, clearly marked
-`EXAMPLE` and `not_confirmed`. This is intentional: the whole point of
-Sahihi is that it never presents information it hasn't verified, so this
-scaffold doesn't fabricate real-looking Nairobi notices either.
+- **7 county public hearings** on the Tobacco Control (Amendment) Bill (Nairobi,
+  Uasin Gishu, Bungoma, Tharaka-Nithi, Meru, Laikipia, Kisumu) — venue, date and time
+  from the [Clerk of the National Assembly's notice of 16 September 2026](https://parliament.go.ke/sites/default/files/2026-09/DC%20Health_Final%20PP%20TC%20Bill%20Advert_14.9.2026.pdf).
+- **24 bills open for public comment before the Senate**, from the
+  [Senate bills page](https://www.parliament.go.ke/the-senate/house-business/bills).
 
-Before your demo:
+Notices filed under the special county key `national` are shown for **all 47
+counties**, so a bill before Parliament reaches every user with one entry.
 
-1. Manually research and curate 3–5 real, currently-active public
-   participation notices for Nairobi County from official sources (county
-   gazette, county assembly notices, county website).
-2. Fill in every field for each notice — `deadline`, `venue`,
-   `submission_instructions`, `source_name`, `source_url`,
-   `date_published`, `last_verified`. If a detail genuinely isn't
-   confirmed anywhere, leave it as `"not_confirmed"` — the composer will
-   surface that honestly rather than guess.
-3. Re-verify `last_verified` dates close to your demo/submission date.
+**Editing it:** fill every field; where an official source doesn't state something,
+write `"not_confirmed"` rather than guessing. Then run `pnpm test` — the suite fails
+on a missing field, a malformed date, a non-http source URL, a duplicate id or a
+leftover placeholder. Notices with a confirmed deadline retire themselves; ones
+without a deadline must be removed by hand when they close.
 
-## Conversation flow
+## How it is built
 
-```
-user: hi
-bot:  greeting, asks for county
-user: nairobi
-bot:  numbered list of active notices (title, summary, deadline, source,
-      last verified)
-user: 1                → submission details for notice #1
-user: remind 1          → opt-in reminder, 2-3 days before deadline
-user: change county      → resets to ask for county again
-```
+NestJS + TypeScript. Each concern is a module under `src/`:
 
-Swahili works the same way — say "kiswahili" or "habari" once, and the
-session's language switches for all subsequent replies.
+- **`conversation/`** — the channel-agnostic engine plus the response composer (the
+  trust boundary described above).
+- **`notices/`** — the knowledge base, expiry, keyword search, county matching for all
+  47 counties including misspellings and phrases like "I live in Nairobi county".
+- **`whatsapp/`** — Meta webhook with `X-Hub-Signature-256` verification, outbound
+  sends, and approved-template reminders. Falls back to a console stub when
+  unconfigured, so everything stays testable.
+- **`chat/`** — the same engine over HTTP for the browser demo page.
+- **`reminders/`** — a daily job that sends one reminder inside the last 3 days
+  before a deadline, marks it sent, and retries a failed send the next day.
+- **`session/`** — conversations and reminders persisted to `data/sessions.json` so
+  they survive a restart.
 
-## Consent and opt-out
+Built with AI coding tools (Claude Code); see [SUBMISSION.md](SUBMISSION.md) for what
+they did, including reading Parliament's hearing schedule out of a PDF table and
+county notices out of scanned JPEGs.
 
-Setting a reminder stores the user's WhatsApp number, so every reminder
-confirmation tells them how to stop. Replying **stop** (also `cancel`,
-`unsubscribe`, `acha`, `sitisha`) cancels their reminders and deletes their
-session from the store. Before going live you also need a privacy notice and
-a retention policy for `data/sessions.json` — it holds phone numbers, which
-are personal data under Kenya's Data Protection Act.
+## Privacy
 
-## Wiring up real WhatsApp
+Reminders are opt-in. Every confirmation tells the user how to stop. `stop` (also
+`cancel`, `unsubscribe`, `acha`, `sitisha`) cancels reminders and deletes their
+record. `data/sessions.json` holds phone numbers — personal data under Kenya's Data
+Protection Act — and is git-ignored. A published privacy notice and a retention
+period are still outstanding.
 
-1. Create a Meta developer app + WhatsApp Business API product, get a
-   temporary access token and phone number ID.
-2. Set `WHATSAPP_TOKEN`, `WHATSAPP_PHONE_NUMBER_ID`,
-   `WHATSAPP_VERIFY_TOKEN`, and `WHATSAPP_APP_SECRET` (Meta dashboard → App
-   settings → Basic → App secret) in `.env`. With the app secret set, only
-   requests genuinely signed by Meta are accepted.
-3. Point the Meta webhook config at
-   `https://<your-deployed-url>/webhook/whatsapp`, using the same
-   `WHATSAPP_VERIFY_TOKEN` in the Meta dashboard's verify-token field.
-4. Create and submit a **message template** for reminders in the Meta
-   dashboard (a utility template with two body variables: `{{1}}` notice
-   title, `{{2}}` deadline, e.g. `Reminder: the public participation deadline
-   for "{{1}}" is {{2}}. Reply MENU for details or STOP to cancel reminders.`).
-   Once approved, set `WHATSAPP_REMINDER_TEMPLATE` to its name. This is
-   required: Meta rejects free-form messages sent more than 24 hours after the
-   user's last message, which is exactly when reminders go out.
-5. No other code changes needed — `src/whatsapp/` already handles the
-   verification handshake, inbound/outbound messages, template sends and
-   signature checks once these env vars are set.
+## Connecting real WhatsApp
 
-## What's deliberately NOT built (per the MVP scope)
+1. Create a Meta developer app with the WhatsApp Business product; get an access
+   token and phone number ID.
+2. Set `WHATSAPP_TOKEN`, `WHATSAPP_PHONE_NUMBER_ID`, `WHATSAPP_VERIFY_TOKEN` and
+   `WHATSAPP_APP_SECRET` in `.env`. With the app secret set, only requests genuinely
+   signed by Meta are accepted.
+3. Point the Meta webhook at `https://<your-deployed-url>/webhook/whatsapp`, using
+   the same verify token.
+4. Submit a **reminder message template** (utility, two body variables: `{{1}}` notice
+   title, `{{2}}` deadline) and set `WHATSAPP_REMINDER_TEMPLATE` to its name. This is
+   required — Meta rejects free-form messages more than 24 hours after the user's
+   last message, which is exactly when reminders go out.
 
-- No live scraping of county websites/gazettes — data is manually curated,
-  as the design doc specifies. State this plainly in your written summary.
-- No Postgres/Redis — sessions and reminders live in a single JSON file,
-  fine for a hackathon demo on one server, not for production scale (swap
-  `SessionService` in `src/session/session.service.ts` for a real store if
-  you take this further).
+No code changes needed; `src/whatsapp/` already handles all of it.
+
+## Known limits, stated plainly
+
+- **Collection, not software, is the bottleneck.** 40 counties have no local notices
+  on file yet, because most are advertised in newspapers, on notice boards and at
+  barazas. The next build step is a fetcher that reads the machine-readable sources
+  and files candidates into a queue a human approves — automation proposes, a person
+  still verifies.
+- **Kiswahili is partial:** the conversation switches, but field labels
+  ("Deadline", "Venue") are still English.
+- **No SMS or USSD path**, so phones without WhatsApp are excluded.
+- **One server, one JSON file** for sessions — fine for a pilot, not for scale.
+- **No live scraping** of county sites or the Gazette yet; all data is curated by hand.
+
+---
+
+**Sahihi** is Kiswahili for *correct, accurate, authentic*. The name is the
+specification.
