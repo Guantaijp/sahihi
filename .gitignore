@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+dist-test/
+data/sessions.json

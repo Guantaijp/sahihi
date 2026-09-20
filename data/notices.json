@@ -1,0 +1,448 @@
+{
+  "_readme": "Curated, verified notices only. Every fact below was checked against the official source in source_url on the last_verified date. Any detail the official source does not state is \"not_confirmed\" — never fill it in from news reports or guesswork. The special county key \"national\" holds notices that apply everywhere; they are shown for every county. Re-verify before any demo, and remove notices once their deadline has passed. Notices marked with an unconfirmed deadline stay listed until removed by hand — check them periodically. Run `pnpm test` after every edit.",
+  "counties": {
+    "national": {
+      "display_name": "Kenya (national)",
+      "notices": [
+        {
+          "id": "pp-bill-2025",
+          "title": "The Public Participation Bill, 2025 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A national Bill (National Assembly Bills No. 44 of 2025) that creates a legal framework for how public participation is carried out, including how the public must be notified and given reasonable time to make submissions. It has been approved by the National Assembly and is now before the Senate, which accepts comments on it online.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Public Participation Bill, 2025 (National Assembly Bills No. 44 of 2025) - as approved by NA\" and use its \"Submit Comments\" form.",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-19"
+        },
+        {
+          "id": "sen-the-sports-amendment-bill-2026-na-bill-no-5-o",
+          "title": "The Sports Amendment Bill 2026 NA Bill No. 5 of 2026 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Sports Amendment Bill 2026 NA Bill No. 5 of 2026\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-09/Bills%20Digest%20Sports%20Amendment%2C%20NA%20Bill%20No.%205%20of%202026%20%281%29.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-kenya-national-library-services-bill",
+          "title": "The Kenya National Library Services Bill — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Kenya National Library Services Bill\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-07/Bills%20Digest%20-%20Kenya%20National%20Library%20Service%20Bill%2C%20NA%20Bill%20No.%2020%20of%202023%20%281%29.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-quality-healthcare-and-patient-safety-bil",
+          "title": "The Quality HealthCare and Patient Safety Bill, 2025 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Quality HealthCare and Patient Safety Bill, 2025.\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-07/Bill%20Digest%20-The%20Quality%20HealthCare%20and%20Patient%20Safety%20Bill%2C%20%28NA%20Bill%20No.41%20of%202025%29.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-wildlife-conservation-and-management-amen",
+          "title": "The Wildlife Conservation and Management (Amendment Bill) (Senate Bills No. 46. of 2023) — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Wildlife Conservation and Management ( Amendment Bill) ( Senate Bills No. 46. of 2023)\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-06/The%20Wildlife%20Conservation%20%20and%20Management%20%28%20Amendment0%20Bill%20%28Senat%20Bills%20No.%2046.%20of%202023%29.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-statutory-instruments-amendment-bill-2024",
+          "title": "The Statutory Instruments(Amendment) Bill, 2024 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"THE STATUTORY INSTRUMENTS( AMMENDMENT) BILL, 2024.\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-06/THE%20STATUTORY%20INSTRUMENTS%28AMENDMENT%29%20BILL%2C%202024.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-environmental-management-and-coordination",
+          "title": "The Environmental Management and Coordination (Amendment) Bill, 2023 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Environmental Management and Coordination ( Amendment) Bill, 2023\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-06/The%20Environmental%20Management%20and%20Coordination%20%28Amendment%29%20Bill%2C%202023%20%281%29.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-county-governments-laws-amendment-bill-20",
+          "title": "The County Governments Laws (Amendment) Bill, 2025 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The County Governments Laws ( Amendment) Bill, 2025\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-06/The%20County%20Governments%20Laws%20%28Amendment%29Bill%2CNo.14%20of%202025%20%281%29.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-agriculture-produce-minimum-guaranteed-re",
+          "title": "The Agriculture Produce (Minimum Guaranteed Returns) Bill, 2025 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Agriculture Produce (Minimum Guaranteed Returns) Bill, 2025\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-06/The%20Agriculture%20Produce%20%28Minimum%20Guaranteed%20Returns%29%20Bill%2C%20No.17%20of%202025%20%282%29.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-business-laws-amendment-bill-2024",
+          "title": "The Business Laws (Amendment) Bill, 2024 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Business Laws ( Amendment) Bill, 2024\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-06/51.The%20Business%20Laws%20%28Amendment%29%20Bill%2C%20No.51%20of%202024%20%20%281%29%20%281%29.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-county-governments-election-laws-amendmen",
+          "title": "The County Governments Election Laws (Amendment) Bill, 2024 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The County Governments Election Laws (Amendment) Bill, 2024\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-06/2.The%20County%20Government%20Election%20Laws%28Amend%29Bill%2C%20No.2%20of%202024%20%281%29.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-county-allocation-of-revenue-bill-no-10-o",
+          "title": "The County Allocation of Revenue Bill, No.10 of 2026 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The County Allocation of Revenue Bill, No.10 of 2026\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-05/The%20County%20Allocation%20of%20Revenue%20Bill%2C%20No.10%20of%202026.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-referendum-bill-2026",
+          "title": "The Referendum Bill, 2026 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Referendum Bill, 2026\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-05/Bills%20Digest%20-%20The%20Referendum%20Bill%2C%202026.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-forest-conservation-and-management-amendment-",
+          "title": "Forest Conservation and Management (Amendment) Bill — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"Forest Conservation and Management ( Amendment) Bill\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-05/Forest%20Conservation%20and%20Management%20%28Amendment%29%20Bill_0001.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-county-governments-additional-allocations",
+          "title": "The County Governments Additional Allocations Bill, No.8 of 2026 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The County Governments Additional Allocations Bill, No.8 of 2026\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-05/The%20County%20Governments%20Additional%20Allocations%20Bill%2C%20No.8%20of%202026.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-constitution-of-kenya-amendment-bill-no-7",
+          "title": "The Constitution of Kenya (Amendment) Bill, No.7 of 2026 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Constitution of Kenya ( Amendment) Bill, No.7 of 2026\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-04/Bills%20Digest%20-Constitution%20of%20Kenya%20%28Amendment%29%20Bill%20%28Senate%20Bills%20No.%207%20of%202026%29.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-county-government-amendment-bill-2026-sen",
+          "title": "The County Government (Amendment) Bill,2026 (Senate Bills No.5 of 2026) — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The County Government (Amendment) Bill,2026 (Senate Bills No.5 of 2026)\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-04/The%20County%20Government%20%28Amendment%29%20Bill%2C2026%20%28Senate%20Bills%20No.5%20of%202026%29.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-artificial-intelligence-bill-2026-senate-",
+          "title": "The Artificial Intelligence Bill, 2026 (Senate Bills No.4 of 2025) — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Artificial Intelligence Bill, 2026 (Senate Bills No.4 of 2025)\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-04/Bill%20Digest%20-%20The%20Artificial%20Intelligence%20Bill%2C%20No.4%20of%202026.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-equalisation-fund-appropriation-bill-2025",
+          "title": "The Equalisation Fund Appropriation Bill,2025 (National Assembly Bills No.21 of 2025) — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Equalisation Fund Appropriation Bill,2025 (National Assembly Bills No.21 of 2025)\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-04/The%20Equalisation%20Fund%20Appropriation%20Bill%2C2025%20%28National%20Assembly%20Bills%20No.21%20of%202025%29_0.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-division-of-revenue-bill-2026-national-as",
+          "title": "The Division of Revenue Bill,2026 (National Assembly Bills No.2 of 2026) — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Division of Revenue Bill,2026 (National Assembly Bills No.2 of 2026)\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-03/The%20Division%20of%20Revenue%20Bill%2C2026%20%28National%20Assembly%20Bills%20No.2%20of%202026%29.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-mining-amendment-bill-no-22-of-2025",
+          "title": "The Mining (Amendment) Bill, No.22 of 2025 — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Mining (Amendment) Bill, No.22 of 2025\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-04/Bill%20Digest%20-%20The%20Mining%20%28Amendment%29%20Bill%2CNo.22%20of%202025_0.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-basic-education-amendment-bill-2023-natio",
+          "title": "The Basic Education (Amendment) Bill, 2023 (National Assembly Bills No.59 of 2023) — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Basic Education (Amendment) Bill, 2023 (National Assembly Bills No.59 of 2023)\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-02/Bills%20Digest%20The%20Basic%20Education%20%28Amendment%29%20Bill%2C2023%2CNA.Bill%20No.59%20of%202023.%202.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-public-service-internship-bill-2022-natio",
+          "title": "The Public Service Internship Bill, 2022 (National Assembly Bills No.63 of 2022) — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Public Service Internship Bill, 2022 (National Assembly Bills No.63 of 2022)\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2026-04/Bill%20Digest%20-%20The%20Public%20Service%20Internship%20Bill%2C%20No.63%20of%202022.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        },
+        {
+          "id": "sen-the-assisted-reproductive-technology-bill-nat",
+          "title": "The Assisted Reproductive Technology Bill (National Assembly Bills No. 61 of 2022) — Senate is taking public comments",
+          "topic": "national_bill",
+          "summary": "A Bill before the Senate of Kenya. Its page on Parliament's website has a \"Submit Comments\" form where any member of the public can send views on it.",
+          "deadline": "not_confirmed",
+          "venue": "not_confirmed",
+          "submission_instructions": "Open the Senate bills page, find \"The Assisted Reproductive Technology Bill (National Assembly Bills No. 61 of 2022)\" and use its \"Submit Comments\" form. Bill document: https://www.parliament.go.ke/sites/default/files/2025-12/Bill%20Digest%20-%20The%20Assisted%20Reproductive%20Technology%20Bill%20%28National%20Assembly%20Bills%20No.%2061%20of%202022%29_0.pdf",
+          "source_name": "Senate of Kenya — Bills page (Parliament of Kenya website)",
+          "source_url": "https://www.parliament.go.ke/the-senate/house-business/bills",
+          "date_published": "not_confirmed",
+          "last_verified": "2026-09-20"
+        }
+      ]
+    },
+    "nairobi": {
+      "display_name": "Nairobi",
+      "notices": [
+        {
+          "id": "tc-2026-nairobi",
+          "title": "Tobacco Control (Amendment) Bill — Parliament public hearing in Nairobi",
+          "topic": "national_bill",
+          "summary": "The National Assembly's Departmental Committee on Health is collecting public views on a Bill (Senate Bill No. 35 of 2024) that would regulate electronic nicotine delivery systems, including e-cigarettes. You can attend the Nairobi hearing to give your views in person or hand in a written memorandum.",
+          "deadline": "2026-09-24",
+          "venue": "Mini Chamber, County Hall, Parliament Buildings, Nairobi — Thursday 24 September 2026, 9:00 AM to 1:00 PM",
+          "submission_instructions": "Appear at the public hearing to give oral views and submit written memoranda on the Bill. Copies of the Bill are on the Parliament website: https://www.parliament.go.ke/the-national-assembly/house-business/bills",
+          "source_name": "National Assembly of Kenya — Notification of Public Hearings and Invitation to Submit Views (Clerk of the National Assembly)",
+          "source_url": "https://parliament.go.ke/sites/default/files/2026-09/DC%20Health_Final%20PP%20TC%20Bill%20Advert_14.9.2026.pdf",
+          "date_published": "2026-09-16",
+          "last_verified": "2026-09-19"
+        }
+      ]
+    },
+    "uasin_gishu": {
+      "display_name": "Uasin Gishu",
+      "notices": [
+        {
+          "id": "tc-2026-uasin-gishu",
+          "title": "Tobacco Control (Amendment) Bill — Parliament public hearing in Eldoret",
+          "topic": "national_bill",
+          "summary": "The National Assembly's Departmental Committee on Health is collecting public views on a Bill (Senate Bill No. 35 of 2024) that would regulate electronic nicotine delivery systems, including e-cigarettes. You can attend the Uasin Gishu hearing to give your views in person or hand in a written memorandum.",
+          "deadline": "2026-09-25",
+          "venue": "Uasin Gishu County Hall, Eldoret Town — Friday 25 September 2026, 9:00 AM to 12:00 Noon",
+          "submission_instructions": "Appear at the public hearing to give oral views and submit written memoranda on the Bill. Copies of the Bill are on the Parliament website: https://www.parliament.go.ke/the-national-assembly/house-business/bills",
+          "source_name": "National Assembly of Kenya — Notification of Public Hearings and Invitation to Submit Views (Clerk of the National Assembly)",
+          "source_url": "https://parliament.go.ke/sites/default/files/2026-09/DC%20Health_Final%20PP%20TC%20Bill%20Advert_14.9.2026.pdf",
+          "date_published": "2026-09-16",
+          "last_verified": "2026-09-19"
+        }
+      ]
+    },
+    "bungoma": {
+      "display_name": "Bungoma",
+      "notices": [
+        {
+          "id": "tc-2026-bungoma",
+          "title": "Tobacco Control (Amendment) Bill — Parliament public hearing in Kanduyi",
+          "topic": "national_bill",
+          "summary": "The National Assembly's Departmental Committee on Health is collecting public views on a Bill (Senate Bill No. 35 of 2024) that would regulate electronic nicotine delivery systems, including e-cigarettes. You can attend the Bungoma hearing to give your views in person or hand in a written memorandum.",
+          "deadline": "2026-09-25",
+          "venue": "Red Cross Hall, Kanduyi — Friday 25 September 2026, 2:30 PM to 4:30 PM",
+          "submission_instructions": "Appear at the public hearing to give oral views and submit written memoranda on the Bill. Copies of the Bill are on the Parliament website: https://www.parliament.go.ke/the-national-assembly/house-business/bills",
+          "source_name": "National Assembly of Kenya — Notification of Public Hearings and Invitation to Submit Views (Clerk of the National Assembly)",
+          "source_url": "https://parliament.go.ke/sites/default/files/2026-09/DC%20Health_Final%20PP%20TC%20Bill%20Advert_14.9.2026.pdf",
+          "date_published": "2026-09-16",
+          "last_verified": "2026-09-19"
+        }
+      ]
+    },
+    "tharaka_nithi": {
+      "display_name": "Tharaka-Nithi",
+      "notices": [
+        {
+          "id": "tc-2026-tharaka-nithi",
+          "title": "Tobacco Control (Amendment) Bill — Parliament public hearing at Kaanwa Market",
+          "topic": "national_bill",
+          "summary": "The National Assembly's Departmental Committee on Health is collecting public views on a Bill (Senate Bill No. 35 of 2024) that would regulate electronic nicotine delivery systems, including e-cigarettes. You can attend the Tharaka-Nithi hearing to give your views in person or hand in a written memorandum.",
+          "deadline": "2026-09-25",
+          "venue": "Kaanwa Market, Mariani, Chief's Office — Friday 25 September 2026, 9:00 AM to 12:00 Noon",
+          "submission_instructions": "Appear at the public hearing to give oral views and submit written memoranda on the Bill. Copies of the Bill are on the Parliament website: https://www.parliament.go.ke/the-national-assembly/house-business/bills",
+          "source_name": "National Assembly of Kenya — Notification of Public Hearings and Invitation to Submit Views (Clerk of the National Assembly)",
+          "source_url": "https://parliament.go.ke/sites/default/files/2026-09/DC%20Health_Final%20PP%20TC%20Bill%20Advert_14.9.2026.pdf",
+          "date_published": "2026-09-16",
+          "last_verified": "2026-09-19"
+        }
+      ]
+    },
+    "meru": {
+      "display_name": "Meru",
+      "notices": [
+        {
+          "id": "tc-2026-meru",
+          "title": "Tobacco Control (Amendment) Bill — Parliament public hearing in Meru Town",
+          "topic": "national_bill",
+          "summary": "The National Assembly's Departmental Committee on Health is collecting public views on a Bill (Senate Bill No. 35 of 2024) that would regulate electronic nicotine delivery systems, including e-cigarettes. You can attend the Meru hearing to give your views in person or hand in a written memorandum.",
+          "deadline": "2026-09-25",
+          "venue": "Kamunde Hall, Meru Town — Friday 25 September 2026, 2:30 PM to 4:30 PM",
+          "submission_instructions": "Appear at the public hearing to give oral views and submit written memoranda on the Bill. Copies of the Bill are on the Parliament website: https://www.parliament.go.ke/the-national-assembly/house-business/bills",
+          "source_name": "National Assembly of Kenya — Notification of Public Hearings and Invitation to Submit Views (Clerk of the National Assembly)",
+          "source_url": "https://parliament.go.ke/sites/default/files/2026-09/DC%20Health_Final%20PP%20TC%20Bill%20Advert_14.9.2026.pdf",
+          "date_published": "2026-09-16",
+          "last_verified": "2026-09-19"
+        }
+      ]
+    },
+    "laikipia": {
+      "display_name": "Laikipia",
+      "notices": [
+        {
+          "id": "tc-2026-laikipia",
+          "title": "Tobacco Control (Amendment) Bill — Parliament public hearing in Nanyuki",
+          "topic": "national_bill",
+          "summary": "The National Assembly's Departmental Committee on Health is collecting public views on a Bill (Senate Bill No. 35 of 2024) that would regulate electronic nicotine delivery systems, including e-cigarettes. You can attend the Laikipia hearing to give your views in person or hand in a written memorandum.",
+          "deadline": "2026-09-26",
+          "venue": "NG-CDF Hall, Nanyuki Town — Saturday 26 September 2026, 9:00 AM to 12:00 Noon",
+          "submission_instructions": "Appear at the public hearing to give oral views and submit written memoranda on the Bill. Copies of the Bill are on the Parliament website: https://www.parliament.go.ke/the-national-assembly/house-business/bills",
+          "source_name": "National Assembly of Kenya — Notification of Public Hearings and Invitation to Submit Views (Clerk of the National Assembly)",
+          "source_url": "https://parliament.go.ke/sites/default/files/2026-09/DC%20Health_Final%20PP%20TC%20Bill%20Advert_14.9.2026.pdf",
+          "date_published": "2026-09-16",
+          "last_verified": "2026-09-19"
+        }
+      ]
+    },
+    "kisumu": {
+      "display_name": "Kisumu",
+      "notices": [
+        {
+          "id": "tc-2026-kisumu",
+          "title": "Tobacco Control (Amendment) Bill — Parliament public hearing in Kisumu Town",
+          "topic": "national_bill",
+          "summary": "The National Assembly's Departmental Committee on Health is collecting public views on a Bill (Senate Bill No. 35 of 2024) that would regulate electronic nicotine delivery systems, including e-cigarettes. You can attend the Kisumu hearing to give your views in person or hand in a written memorandum.",
+          "deadline": "2026-09-26",
+          "venue": "Kisumu Social Hall, Kisumu Town — Saturday 26 September 2026, 9:00 AM to 1:00 PM",
+          "submission_instructions": "Appear at the public hearing to give oral views and submit written memoranda on the Bill. Copies of the Bill are on the Parliament website: https://www.parliament.go.ke/the-national-assembly/house-business/bills",
+          "source_name": "National Assembly of Kenya — Notification of Public Hearings and Invitation to Submit Views (Clerk of the National Assembly)",
+          "source_url": "https://parliament.go.ke/sites/default/files/2026-09/DC%20Health_Final%20PP%20TC%20Bill%20Advert_14.9.2026.pdf",
+          "date_published": "2026-09-16",
+          "last_verified": "2026-09-19"
+        }
+      ]
+    }
+  }
+}
