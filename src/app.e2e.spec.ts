@@ -60,6 +60,21 @@ describe("Sahihi app (e2e)", () => {
       assert.match(await t.chat("flow", "hi"), /Which county are you in\?/);
     });
 
+    it("answers a question asked as the very first message", async () => {
+      // A WhatsApp user's opening message is often the question itself.
+      const reply = await t.chat("first-msg", "What is open about the budget?");
+      assert.match(reply, /Here's what I have on file about/);
+      assert.match(reply, /1\. Budget Hearing/);
+    });
+
+    it("answers a county named as the very first message", async () => {
+      assert.match(await t.chat("first-county", "Nairobi"), /Here's what's active in Nairobi County/);
+    });
+
+    it("greets an empty first message", async () => {
+      assert.match(await t.chat("first-empty", " "), /Which county are you in\?/);
+    });
+
     it("rejects an unknown county", async () => {
       assert.match(await t.chat("flow", "atlantis"), /didn't recognise that county/);
     });

@@ -82,12 +82,16 @@ export class ConversationService {
         return this.handleFreeText(userId, text, session.language, false);
       }
 
-      case "awaiting_county":
-        return this.handleFreeText(userId, text, session.language, true);
-
+      // "start" behaves like awaiting_county: someone whose very first message is
+      // already a county or a question gets an answer, not a greeting that
+      // throws their question away. An empty message still gets the greeting.
       default: {
-        session = this.sessions.update(userId, { state: "awaiting_county" });
-        return this.finalize(this.composer.greeting(session.language), session.language);
+        if (!text) {
+          session = this.sessions.update(userId, { state: "awaiting_county" });
+          return this.finalize(this.composer.greeting(session.language), session.language);
+        }
+        this.sessions.update(userId, { state: "awaiting_county" });
+        return this.handleFreeText(userId, text, session.language, true);
       }
     }
   }
